@@ -37,8 +37,8 @@ watch(
       matchMedia = null;
     }
 
-    // Reset display text
-    displayText.value = "";
+    // Reset display text (default to full text so it never vanishes on load)
+    displayText.value = props.text;
 
     // Skip animation if user prefers reduced motion
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

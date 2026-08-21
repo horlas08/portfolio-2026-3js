@@ -2,7 +2,6 @@
 import { computed, ref, watchEffect, onBeforeUnmount } from "vue";
 import gsap from "gsap";
 import { locale } from "../../../i18n/store";
-import { t } from "../../../i18n/utils/translate";
 import AppearingText from "../../../components/AppearingText.vue";
 import { BREAKPOINTS } from "../../../utils/sizes";
 import { Vector3 } from "three";
@@ -101,54 +100,124 @@ onBeforeUnmount(() => {
   }
 });
 
+import skillsData from "../../../content/skills.json";
+
+interface SkillItem {
+  en?: string;
+  de?: string;
+  name?: string;
+  [key: string]: string | undefined;
+}
+
+interface SkillCategory {
+  category: string | SkillItem;
+  skills: (string | SkillItem)[];
+}
+
+interface SkillsJsonObject {
+  frontend?: (string | SkillItem)[];
+  backend?: (string | SkillItem)[];
+  [key: string]: (string | SkillItem)[] | undefined;
+}
+
+const activeTab = ref<number | "all">(0);
+
 const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
   const updatedTimelines = [...timelines.value, { timeline, delay }];
   timelines.value = updatedTimelines;
 };
 
-const SERVICES_EN = [
-  { name: "Three.js & WebGL" },
-  { name: "Node.js & WebSockets" },
-  { name: "React & Vue" },
-  { name: "Kubernetes & Redis" },
-  { name: "Real-time Multiplayer" },
-] as const satisfies { name: string }[];
+const skillGroups = computed(() => {
+  const currentLang = locale.value as "en" | "de";
 
-const SERVICES_DE = [
-  { name: "Three.js & WebGL" },
-  { name: "Node.js & WebSockets" },
-  { name: "React & Vue" },
-  { name: "Kubernetes & Redis" },
-  { name: "Echtzeit-Mehrspieler" },
-] as const satisfies { name: string }[];
+  const getItemName = (item: string | SkillItem) => {
+    if (typeof item === "string") return item;
+    return item[currentLang] || item.en || item.de || item.name || "";
+  };
 
-const services = computed(() => {
-  return locale.value === "en" ? SERVICES_EN : SERVICES_DE;
+  if (Array.isArray(skillsData)) {
+    return (skillsData as unknown as SkillCategory[]).map((cat) => ({
+      title: getItemName(cat.category),
+      skills: (cat.skills || []).map((s) => ({ name: getItemName(s) })),
+    }));
+  }
+
+  const objData = skillsData as SkillsJsonObject;
+  const groups = [];
+
+  if (objData.frontend && Array.isArray(objData.frontend)) {
+    groups.push({
+      title: currentLang === "de" ? "Frontend & Mobile Skills" : "Frontend & Mobile Skills",
+      skills: objData.frontend.map((s) => ({ name: getItemName(s) })),
+    });
+  }
+
+  if (objData.backend && Array.isArray(objData.backend)) {
+    groups.push({
+      title: currentLang === "de" ? "Backend & Cloud Skills" : "Backend & Cloud Skills",
+      skills: objData.backend.map((s) => ({ name: getItemName(s) })),
+    });
+  }
+
+  return groups;
+});
+
+const visibleSkillGroups = computed(() => {
+  if (activeTab.value === "all") return skillGroups.value;
+  const idx = typeof activeTab.value === "number" ? activeTab.value : 0;
+  return skillGroups.value[idx] ? [skillGroups.value[idx]] : skillGroups.value;
 });
 </script>
 
 <template>
   <ProjectedElement :point="point">
-    <div ref="wrapperRef" class="box-services">
-      <div class="box-services-content">
-        <div class="box-services-title">
-          <AppearingText
-            :text="t('services')"
-            :steps="1"
-            :duration="0.35"
-            @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0)"
-          />
-        </div>
-        <div class="box-services-list">
-          <div class="box-services-list-item" v-for="(service, index) in services" :key="service.name">
-            <p class="box-services-list-item-name">
-              <AppearingText
-                :text="service.name"
-                :steps="1"
-                :duration="0.35"
-                @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0.15 + index * 0.1)"
-              />
-            </p>
+    <div ref="wrapperRef" class="box-services" data-lenis-prevent>
+      <div class="box-services-tabs">
+        <button
+          v-for="(group, index) in skillGroups"
+          :key="group.title"
+          :class="['box-services-tab-btn', { 'is-active': activeTab === index }]"
+          @click.stop="activeTab = index"
+        >
+          {{ group.title.replace('Skills', '').replace('Fähigkeiten', '').trim() }}
+        </button>
+        <button
+          :class="['box-services-tab-btn', { 'is-active': activeTab === 'all' }]"
+          @click.stop="activeTab = 'all'"
+        >
+          All
+        </button>
+      </div>
+
+      <div class="box-services-container" data-lenis-prevent>
+        <div
+          class="box-services-card"
+          v-for="(group, gIndex) in visibleSkillGroups"
+          :key="group.title"
+        >
+          <div class="box-services-card-title">
+            <AppearingText
+              :text="group.title"
+              :steps="1"
+              :duration="0.35"
+              @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, gIndex * 0.15)"
+            />
+          </div>
+          <div class="box-services-card-list" data-lenis-prevent>
+            <div
+              class="box-services-list-item"
+              v-for="(service, sIndex) in group.skills"
+              :key="service.name"
+            >
+              <p class="box-services-list-item-name">
+                <AppearingText
+                  :text="service.name"
+                  :steps="1"
+                  :duration="0.35"
+                  @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0.15 + (gIndex * 4 + sIndex) * 0.08)"
+                />
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -164,6 +233,8 @@ const services = computed(() => {
   bottom: var(--count-height);
   width: calc(100% - var(--space-outer) * 2);
   left: var(--space-outer);
+  pointer-events: auto;
+  touch-action: pan-y;
 
   @include mixins.landscape {
     width: 480px;
@@ -216,13 +287,69 @@ const services = computed(() => {
     }
   }
 
-  &-content {
+  &-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: var(--space-xs);
+    pointer-events: auto;
+    z-index: 10;
+  }
+
+  &-tab-btn {
+    background: linear-gradient(to bottom, var(--color-hologram-top) 0%, var(--color-hologram-bottom) 100%);
+    border: 1px solid var(--color-cyan-400);
+    color: var(--color-cyan-400);
+    padding: 3px 10px;
+    font-size: var(--font-size-xs);
+    font-family: "ProFontWindows";
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.75;
+    outline: none;
+
+    &:hover {
+      opacity: 1;
+      background: var(--color-cyan-400);
+      color: #050d24;
+    }
+
+    &.is-active {
+      opacity: 1;
+      background: var(--color-cyan-400);
+      color: #050d24;
+      box-shadow: 0 0 10px rgba(64, 224, 208, 0.5);
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 4px;
+    pointer-events: auto;
+    touch-action: pan-y;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-cyan-400);
+      border-radius: 2px;
+    }
+  }
+
+  &-card {
     border: var(--stroke-sm) solid var(--color-cyan-400);
     border-radius: var(--radius-md);
     background: linear-gradient(to bottom, var(--color-hologram-top) 0%, var(--color-hologram-bottom) 100%);
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: var(--space-xs);
     padding: var(--space-sm) var(--space-md);
 
     @include mixins.landscape {
@@ -232,54 +359,68 @@ const services = computed(() => {
     @include mixins.mq("md") {
       padding: var(--space-sm) var(--space-md);
     }
-  }
 
-  &-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+    &-title {
+      font-size: var(--font-size-title-xxs);
+      font-weight: 700;
 
-    &-item {
+      @include mixins.landscape {
+        font-size: var(--font-size-title-xxs);
+      }
+
+      @include mixins.landscape-large {
+        font-size: var(--font-size-title-xs);
+      }
+    }
+
+    &-list {
       display: flex;
       flex-direction: column;
-      padding-left: 18px;
-      position: relative;
+      gap: var(--space-xs);
+      max-height: 150px;
+      overflow-y: auto;
+      padding-right: 2px;
+      pointer-events: auto;
+      touch-action: pan-y;
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: 2px;
-        top: 6px;
-        width: 4px;
-        height: 4px;
-        background-color: var(--color-text-cyan-400);
-        border-radius: 50%;
+      &::-webkit-scrollbar {
+        width: 3px;
       }
 
-      &-name {
-        font-size: var(--font-size-md);
-
-        @include mixins.landscape {
-          font-size: var(--font-size-sm);
-        }
-
-        @include mixins.landscape-large {
-          font-size: var(--font-size-lg);
-        }
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-cyan-400);
+        border-radius: 2px;
       }
     }
   }
 
-  &-title {
-    font-size: var(--font-size-title-xs);
-    font-weight: 700;
+  &-list-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    position: relative;
 
-    @include mixins.landscape {
-      font-size: var(--font-size-title-xxs);
+    &::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 6px;
+      width: 4px;
+      height: 4px;
+      background-color: var(--color-text-cyan-400);
+      border-radius: 50%;
     }
 
-    @include mixins.landscape-large {
-      font-size: var(--font-size-title-xs);
+    &-name {
+      font-size: var(--font-size-md);
+
+      @include mixins.landscape {
+        font-size: var(--font-size-sm);
+      }
+
+      @include mixins.landscape-large {
+        font-size: var(--font-size-lg);
+      }
     }
   }
 }

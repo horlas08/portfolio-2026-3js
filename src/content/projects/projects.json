@@ -1,0 +1,362 @@
+[
+  {
+    "id": "cubewar",
+    "slug": "cubewar",
+    "title": "CubeWar",
+    "theme": "dark",
+    "tags": ["three", "node", "websockets", "redis"],
+    "videoBorder": false,
+    "live": "https://cubewar.io",
+    "github": "",
+    "thumbnailKey": "cubewar",
+    "previewDescription": {
+      "en": "Multiplayer strategy game",
+      "de": "Mehrspieler-Strategiespiel"
+    },
+    "description": {
+      "en": "CubeWar is a browser-based multiplayer game where players control cube avatars in fast-paced strategic battles.<br/><br/>I built the full stack myself, including the game engine, the client-side timeline system, and real-time networking with Redis-based matchmaking for smooth, high-concurrency gameplay.",
+      "de": "CubeWar ist ein browserbasiertes Multiplayer-Spiel, in dem Spieler in schnellen, strategischen Kämpfen gegeneinander antreten.<br/><br/>Ich habe den gesamten Stack selbst entwickelt, inklusive der Spiel-Engine, des Client-Timeline-Systems und des Echtzeit-Netzwerks mit Redis-basiertem Matchmaking für flüssiges Gameplay."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "video",
+          "mediaKey": "video:cubewar",
+          "caption": { "en": "Gameplay", "de": "Gameplay" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:cubewar/cubewar-0",
+          "alt": "Tutorial",
+          "caption": { "en": "Tutorial", "de": "Tutorial" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:cubewar/cubewar-1",
+          "alt": "Map Themes",
+          "caption": { "en": "Map Themes", "de": "Karten Themen" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:cubewar/cubewar-2",
+          "alt": "Authentication",
+          "caption": { "en": "Authentication", "de": "Authentifizierung" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:cubewar/cubewar-3",
+          "alt": "Responsive Design",
+          "caption": { "en": "Responsive Design", "de": "Responsives Design" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:cubewar/cubewar-4",
+          "alt": "Multiple Gamemodes",
+          "caption": { "en": "Multiple Gamemodes", "de": "Mehrere Spielmodi" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:cubewar/cubewar-5",
+          "alt": "Party System",
+          "caption": { "en": "Party System", "de": "Party-System" }
+        }
+      }
+    ]
+  },
+  {
+    "id": "quibbo",
+    "slug": "quibbo",
+    "title": "Quibbo",
+    "theme": "light",
+    "tags": ["three", "node", "kubernetes", "redis", "postgresql"],
+    "videoBorder": true,
+    "live": "",
+    "github": "",
+    "thumbnailKey": "quibbo",
+    "previewDescription": {
+      "en": "Multiplayer gaming platform",
+      "de": "Multiplayer-Spieleplattform"
+    },
+    "description": {
+      "en": "Quibbo is a platform for fast, round-based multiplayer games. It brings together matchmaking, customizable 3D avatars, and account integration with ranked rewards.<br/><br/>The project started as a technical experiment and grew into a scalable system for testing new game ideas.",
+      "de": "Quibbo ist eine Plattform für schnelle, rundenbasierte Multiplayer-Spiele. Sie vereint Matchmaking, anpassbare 3D-Avatare und Kontointegration mit Ranglisten-Belohnungen.<br/><br/>Das Projekt begann als technisches Experiment und entwickelte sich zu einem skalierbaren System zum Testen neuer Spielideen."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "video",
+          "mediaKey": "video:quibbo",
+          "caption": { "en": "User Experience", "de": "Benutzererfahrung" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:quibbo/quibbo-0",
+          "alt": "Avatar Creator",
+          "caption": { "en": "Avatar Creator", "de": "Avatar-Ersteller" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:quibbo/quibbo-1",
+          "alt": "Multiplayer Tic-Tac-Toe",
+          "caption": { "en": "Multiplayer Tic-Tac-Toe", "de": "Multiplayer Tic-Tac-Toe" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:quibbo/quibbo-2",
+          "alt": "Multiple Mini-Games",
+          "caption": { "en": "Multiple Mini-Games", "de": "Verschiedene Minispiele" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:quibbo/quibbo-3",
+          "alt": "Avatar Variations",
+          "caption": { "en": "Avatar Variations", "de": "Avatar-Varianten" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:quibbo/quibbo-4",
+          "alt": "Responsive Design",
+          "caption": { "en": "Responsive Design", "de": "Responsives Design" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:quibbo/quibbo-5",
+          "alt": "Dark Mode",
+          "caption": { "en": "Dark Mode", "de": "Dunkelmodus" }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sharkie",
+    "slug": "sharkie",
+    "title": "Sharkie",
+    "theme": "light",
+    "tags": ["javascript", "html", "css"],
+    "live": "https://sharkie.david-hckh.com/",
+    "github": "https://github.com/davidhckh/sharkie-game",
+    "thumbnailKey": "sharkie",
+    "previewDescription": {
+      "en": "2D adventure game",
+      "de": "2D-Abenteuerspiel"
+    },
+    "description": {
+      "en": "Sharkie is a 2D underwater adventure game built with vanilla JavaScript and HTML5 Canvas.<br/><br/>The project is structured around object-oriented programming principles, featuring custom classes for entities, enemies, and game systems, alongside smooth animations, combat mechanics, and layered parallax backgrounds.",
+      "de": "Sharkie ist ein 2D-Unterwasser-Abenteuerspiel, das mit reinem JavaScript und HTML5 Canvas entwickelt wurde.<br/><br/>Das Projekt basiert auf objektorientierten Programmierprinzipien und bietet maßgeschneiderte Klassen für Entitäten, Gegner und Spielsysteme."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "video",
+          "mediaKey": "video:sharkie",
+          "caption": { "en": "Gameplay", "de": "Gameplay" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sharkie/sharkie-0",
+          "alt": "Entities And Map Design",
+          "caption": { "en": "Entities And Map Design", "de": "Objekte und Kartendesign" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sharkie/sharkie-1",
+          "alt": "Boss Fight",
+          "caption": { "en": "Boss Fight", "de": "Endgegner-Kampf" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sharkie/sharkie-2",
+          "alt": "Mission",
+          "caption": { "en": "Mission", "de": "Mission" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sharkie/sharkie-3",
+          "alt": "Victory Screen",
+          "caption": { "en": "Victory Screen", "de": "Sieg-Bildschirm" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sharkie/sharkie-4",
+          "alt": "Death Screen",
+          "caption": { "en": "Death Screen", "de": "Niederlage-Bildschirm" }
+        }
+      }
+    ]
+  },
+  {
+    "id": "particles",
+    "slug": "particles",
+    "title": "WebGL Particles",
+    "theme": "dark",
+    "tags": ["ogl", "javascript", "glsl"],
+    "live": "https://particles.david-hckh.com/",
+    "github": "",
+    "videoBorder": false,
+    "thumbnailKey": "particles",
+    "previewDescription": {
+      "en": "Dynamic 3D particles",
+      "de": "Dynamische 3D-Partikel"
+    },
+    "description": {
+      "en": "An experimental WebGL project built with OGL.js, animating particles through mathematical formulas and noise functions.<br/><br/>The particles transition smoothly between multiple 3D shapes that blend into one another.",
+      "de": "Ein experimentelles WebGL-Projekt mit OGL.js, das Partikel mithilfe mathematischer Formeln und Rauschfunktionen animiert.<br/><br/>Die Partikel gehen fließend zwischen mehreren 3D-Formen ineinander über."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "video",
+          "mediaKey": "video:particles",
+          "caption": { "en": "Animated Particle System", "de": "Animiertes Partikelsystem" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:particles/particles-0",
+          "alt": "Knot Shape",
+          "caption": { "en": "Knot Shape", "de": "Knoten-Form" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:particles/particles-1",
+          "alt": "Donut Shape",
+          "caption": { "en": "Donut Shape", "de": "Donut-Form" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:particles/particles-2",
+          "alt": "Sphere Shape",
+          "caption": { "en": "Sphere Shape", "de": "Kugel-Form" }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pokedex",
+    "slug": "pokedex",
+    "title": "Pokédex",
+    "theme": "light",
+    "tags": ["javascript", "html", "css"],
+    "live": "https://pokedex.david-hckh.com/",
+    "github": "https://github.com/davidhckh/pokedex",
+    "videoBorder": true,
+    "thumbnailKey": "pokedex",
+    "previewDescription": {
+      "en": "Open-source learning project",
+      "de": "Open-Source-Lernprojekt"
+    },
+    "description": {
+      "en": "One of my first web projects to practice basic web development concepts. The Pokédex is open source so other developers can learn the same way I did.<br/><br/>It also interacts with a public API, to get more experience with asynchronous data fetching.",
+      "de": "Eines meiner ersten Webprojekte zur Praxis von Grundkonzepten der Webentwicklung. Das Pokédex ist Open Source, damit andere Entwickler genauso lernen können.<br/><br/>Es nutzt eine öffentliche API für asynchrones Daten-Fetching."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "video",
+          "mediaKey": "video:pokedex",
+          "caption": { "en": "Pokédex App", "de": "Pokédex App" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:pokedex/pokedex-0",
+          "alt": "Default View",
+          "caption": { "en": "Default View", "de": "Standardansicht" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:pokedex/pokedex-1",
+          "alt": "Search Function",
+          "caption": { "en": "Search Function", "de": "Suchfunktion" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:pokedex/pokedex-2",
+          "alt": "Responsive Design",
+          "caption": { "en": "Responsive Design", "de": "Responsives Design" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:pokedex/pokedex-3",
+          "alt": "Lazy Loading",
+          "caption": { "en": "Lazy Loading", "de": "Nachladen" }
+        }
+      }
+    ]
+  }
+]

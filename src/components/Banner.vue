@@ -24,12 +24,11 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline) => {
 watchEffect((onInvalidate) => {
   if (!appearingTl.value || !bannerRef.value || !backgroundRef.value || !props.animated || !props.copy) return;
 
+  // Play text animation immediately when ready on page load
+  appearingTl.value?.play();
+
   // Create wrapper timeline with ScrollTrigger
   const tl = gsap.timeline({
-    onStart: () => {
-      appearingTl.value?.play();
-    },
-
     scrollTrigger: {
       trigger: bannerRef.value,
       start: "top bottom",

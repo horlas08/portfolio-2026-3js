@@ -1,0 +1,26 @@
+[
+  {
+    "category": { "en": "Frontend & Mobile Skills", "de": "Frontend- & Mobile-Fähigkeiten" },
+    "skills": [
+      { "en": "React.js & Next.js", "de": "React.js & Next.js" },
+      { "en": "Vue.js", "de": "Vue.js" },
+      { "en": "TypeScript & JavaScript", "de": "TypeScript & JavaScript" },
+      { "en": "React Native & Flutter (Dart)", "de": "React Native & Flutter (Dart)" },
+      { "en": "UI/UX Design", "de": "UI/UX Design" },
+      { "en": "Three.js & WebGL", "de": "Three.js & WebGL" },
+      { "en": "HTML5, CSS3 & SASS", "de": "HTML5, CSS3 & SASS" }
+    ]
+  },
+  {
+    "category": { "en": "Backend, Database & Cloud Skills", "de": "Backend-, Datenbank- & Cloud-Fähigkeiten" },
+    "skills": [
+      { "en": "Node.js & Express.js", "de": "Node.js & Express.js" },
+      { "en": "PHP (Laravel, Symfony, Yii)", "de": "PHP (Laravel, Symfony, Yii)" },
+      { "en": "GraphQL & Prisma", "de": "GraphQL & Prisma" },
+      { "en": "MongoDB & MySQL", "de": "MongoDB & MySQL" },
+      { "en": "Firebase & Supabase", "de": "Firebase & Supabase" },
+      { "en": "Docker, DevOps & AWS", "de": "Docker, DevOps & AWS" },
+      { "en": "Git & WordPress", "de": "Git & WordPress" }
+    ]
+  }
+]
