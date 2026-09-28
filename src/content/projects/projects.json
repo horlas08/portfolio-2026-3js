@@ -1,5 +1,35 @@
 [
   {
+    "id": "bellbank",
+    "slug": "bellbank",
+    "title": "BellBank",
+    "theme": "dark",
+    "tags": ["vue", "typescript", "node", "css"],
+    "videoBorder": false,
+    "live": "https://bellmfb.com/",
+    "github": "https://github.com/horlas08/bellbank",
+    "thumbnailKey": "bellbank",
+    "previewDescription": {
+      "en": "Official corporate web platform for Bell Microfinance Bank",
+      "de": "Offizielle Unternehmens-Webplattform der Bell Microfinance Bank"
+    },
+    "description": {
+      "en": "Official digital platform and web application for Bell Microfinance Bank (BellBank).<br/><br/>Built during my software engineering role at BellBank, delivering a fast, responsive, and secure financial portal showcasing core banking services, account registration, and customer banking solutions.",
+      "de": "Offizielle digitale Plattform und Webanwendung für die Bell Microfinance Bank (BellBank).<br/><br/>Entwickelt während meiner Tätigkeit als Software-Entwickler bei der BellBank für ein schnelles, responsives und sicheres Finanzportal."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:bellbank/bellbank-0",
+          "alt": "Homepage Overview",
+          "caption": { "en": "Homepage Overview", "de": "Startseiten-Übersicht" }
+        }
+      }
+    ]
+  },
+  {
     "id": "cubewar",
     "slug": "cubewar",
     "title": "CubeWar",
