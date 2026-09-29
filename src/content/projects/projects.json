@@ -396,7 +396,7 @@
     "theme": "light",
     "tags": ["javascript", "html", "css"],
     "live": "https://pokedex.david-hckh.com/",
-    "github": "https://github.com/davidhckh/pokedex",
+    "github": "",
     "videoBorder": true,
     "thumbnailKey": "pokedex",
     "previewDescription": {
