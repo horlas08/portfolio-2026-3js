@@ -26,6 +26,33 @@
           "alt": "Homepage Overview",
           "caption": { "en": "Homepage Overview", "de": "Startseiten-Übersicht" }
         }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:bellbank/bellbank-1",
+          "alt": "Banking Services",
+          "caption": { "en": "Banking Services", "de": "Bankdienstleistungen" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:bellbank/bellbank-2",
+          "alt": "Digital Features & Security",
+          "caption": { "en": "Digital Features & Security", "de": "Digitale Funktionen & Sicherheit" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:bellbank/bellbank-3",
+          "alt": "Account Registration & Portal",
+          "caption": { "en": "Account Registration & Portal", "de": "Konto-Registrierung & Portal" }
+        }
       }
     ]
   },
