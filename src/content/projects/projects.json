@@ -83,6 +83,89 @@
           "alt": "Platform Dashboard Overview",
           "caption": { "en": "Platform Dashboard Overview", "de": "Plattform-Dashboard-Übersicht" }
         }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:minatpay/minatpay-1",
+          "alt": "VTU & Data Bundles",
+          "caption": { "en": "VTU & Data Bundles", "de": "VTU & Datenpakete" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:minatpay/minatpay-2",
+          "alt": "Bill Payments & Subscriptions",
+          "caption": { "en": "Bill Payments & Subscriptions", "de": "Rechnungszahlungen & Abonnements" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:minatpay/minatpay-3",
+          "alt": "Reseller & Developer API Portal",
+          "caption": { "en": "Reseller & Developer API Portal", "de": "Wiederverkäufer & Entwickler-API-Portal" }
+        }
+      }
+    ]
+  },
+  {
+    "id": "nexio",
+    "slug": "nexio",
+    "title": "Nexio",
+    "theme": "dark",
+    "tags": ["html", "css", "javascript", "tailwind", "bootstrap", "next", "react", "typescript", "node"],
+    "videoBorder": false,
+    "live": "https://nexio-two.vercel.app/",
+    "github": "https://github.com/horlas08/Nexio",
+    "thumbnailKey": "nexio",
+    "previewDescription": {
+      "en": "Borderless Pan-African payments & multi-currency startup",
+      "de": "Grenzenloses pan-afrikanisches Zahlungs- und Multi-Währungs-Startup"
+    },
+    "description": {
+      "en": "Nexio is my upcoming Pan-African fintech startup providing borderless payments and multi-currency accounts across Africa.<br/><br/>Designed to seamlessly connect individuals and businesses across 54 African nations, Nexio enables instant cross-border transfers, multi-currency wallets, foreign bank accounts, real-time exchange rate conversions, and developer payout APIs.",
+      "de": "Nexio ist mein FinTech-Startup für grenzenlose pan-afrikanische Zahlungen und Multi-Währungskonten in Afrika.<br/><br/>Es ermöglicht sofortige grenzüberschreitende Überweisungen, Multi-Währungs-Geldbörsen und Währungsumrechnungen in Echtzeit über 54 afrikanische Nationen hinweg."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "video",
+          "mediaKey": "video:nexio",
+          "caption": { "en": "Platform Interactive Walkthrough", "de": "Interaktiver Plattform-Rundgang" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:nexio/nexio-0",
+          "alt": "Borderless Pan-African Hero",
+          "caption": { "en": "Borderless Pan-African Hero", "de": "Grenzenlose Pan-Afrikanische Plattform" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:nexio/nexio-1",
+          "alt": "Multi-Currency Features & Exchange",
+          "caption": { "en": "Multi-Currency Features & Exchange", "de": "Multi-Währungs-Funktionen & Umrechnung" }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:nexio/nexio-2",
+          "alt": "Global Accounts & Payout Scaling",
+          "caption": { "en": "Global Accounts & Payout Scaling", "de": "Globale Konten & Auszahlungen" }
+        }
       }
     ]
   },
