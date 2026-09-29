@@ -157,13 +157,15 @@ onMounted(async () => {
   &-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
   }
 
   &-video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
   }
 
   &-content {
@@ -172,6 +174,9 @@ onMounted(async () => {
     background-color: var(--color-background-300);
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

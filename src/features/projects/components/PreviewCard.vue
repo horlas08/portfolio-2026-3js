@@ -184,7 +184,8 @@ onUnmounted(() => {
   &-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 
     &-container {
       transition: transform 0.1s ease-in-out;
@@ -196,6 +197,9 @@ onUnmounted(() => {
       border-radius: var(--radius-lg);
       overflow: hidden;
       background-color: var(--color-beige-500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

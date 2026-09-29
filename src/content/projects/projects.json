@@ -80,8 +80,8 @@
         "props": {
           "type": "image",
           "mediaKey": "image:minatpay/minatpay-0",
-          "alt": "Platform Dashboard Overview",
-          "caption": { "en": "Platform Dashboard Overview", "de": "Plattform-Dashboard-Übersicht" }
+          "alt": "VTU & Data Bundles",
+          "caption": { "en": "VTU & Data Bundles", "de": "VTU & Datenpakete" }
         }
       },
       {
@@ -89,8 +89,8 @@
         "props": {
           "type": "image",
           "mediaKey": "image:minatpay/minatpay-1",
-          "alt": "VTU & Data Bundles",
-          "caption": { "en": "VTU & Data Bundles", "de": "VTU & Datenpakete" }
+          "alt": "Platform Dashboard Overview",
+          "caption": { "en": "Platform Dashboard Overview", "de": "Plattform-Dashboard-Übersicht" }
         }
       },
       {
