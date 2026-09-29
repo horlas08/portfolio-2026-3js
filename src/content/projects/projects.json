@@ -57,6 +57,36 @@
     ]
   },
   {
+    "id": "minatpay",
+    "slug": "minatpay",
+    "title": "MinatPay",
+    "theme": "dark",
+    "tags": ["vue", "node", "typescript", "express", "postgresql", "tailwind"],
+    "videoBorder": false,
+    "live": "https://minatpay.com/",
+    "github": "https://github.com/horlas08/minatpay",
+    "thumbnailKey": "minatpay",
+    "previewDescription": {
+      "en": "Nigeria's digital VTU & bill payments platform (Web & Mobile)",
+      "de": "Nigerias digitale VTU- & Rechnungszahlungsplattform"
+    },
+    "description": {
+      "en": "MinatPay is an all-in-one digital VTU and bill payment platform enabling users across Nigeria to instantly buy airtime, cheap data bundles, pay electricity bills, and subscribe to cable TV services.<br/><br/>Built for both web and mobile, the platform features fast wallet funding, real-time transaction processing (< 5s), instant token generation, automated reseller portal management, and developer API integration.",
+      "de": "MinatPay ist eine digitale VTU- und Rechnungszahlungsplattform für Sendezeit, Datenpakete, Stromrechnungen und TV-Abonnements in Nigeria.<br/><br/>Entwickelt für Web und Mobile mit automatisierter Geldbörsen-Aufladung, Echtzeit-Transaktionsabwicklung und Entwickler-API-Integration."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:minatpay/minatpay-0",
+          "alt": "Platform Dashboard Overview",
+          "caption": { "en": "Platform Dashboard Overview", "de": "Plattform-Dashboard-Übersicht" }
+        }
+      }
+    ]
+  },
+  {
     "id": "cubewar",
     "slug": "cubewar",
     "title": "CubeWar",
