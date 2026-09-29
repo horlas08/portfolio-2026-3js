@@ -170,6 +170,87 @@
     ]
   },
   {
+    "id": "sameit",
+    "slug": "sameit",
+    "title": "SameGo",
+    "theme": "dark",
+    "tags": ["react", "next", "typescript", "tailwind", "node", "postgresql"],
+    "videoBorder": false,
+    "live": "https://same-go.com",
+    "github": "https://github.com/horlas08/sameit-web",
+    "thumbnailKey": "sameit",
+    "previewDescription": {
+      "en": "GSM services, IMEI check & interactive hardware schematics platform",
+      "de": "GSM-Dienste, IMEI-Prüfung & interaktive Schaltplan-Plattform"
+    },
+    "description": {
+      "en": "SameGo is an enterprise web application designed for mobile device technicians and GSM service providers.<br/><br/>The platform features automated IMEI & server service order processing, real-time balance funding, multilingual localization with Arabic RTL support, panic log decoding, and a high-performance interactive boardview & schematics canvas viewer.",
+      "de": "SameGo ist eine Enterprise-Webanwendung für Smartphone-Reparaturtechniker und GSM-Dienstleister.<br/><br/>Die Plattform bietet automatisierte IMEI- und Server-Auftragsabwicklung, Echtzeit-Guthabenaufladung, mehrsprachige Lokalisierung mit RTL-Unterstützung für Arabisch, Panic-Log-Dekodierung sowie einen interaktiven High-Performance-Schaltplan- und Boardview-Viewer."
+    },
+    "components": [
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sameit/sameit-0",
+          "alt": "Dashboard & Platform Overview",
+          "caption": {
+            "en": "Dashboard & Platform Overview",
+            "de": "Dashboard- & Plattform-Übersicht"
+          }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sameit/sameit-1",
+          "alt": "GSM & Server Services Catalog",
+          "caption": {
+            "en": "GSM & Server Services Catalog",
+            "de": "GSM- & Server-Dienstleistungskatalog"
+          }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sameit/sameit-2",
+          "alt": "Interactive Schematics & Boardview Canvas",
+          "caption": {
+            "en": "Interactive Schematics & Boardview Canvas",
+            "de": "Interaktiver Schaltplan- & Boardview-Viewer"
+          }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sameit/sameit-3",
+          "alt": "Order Management & Tracking",
+          "caption": {
+            "en": "Order Management & Tracking",
+            "de": "Auftragsverwaltung & Sendungsverfolgung"
+          }
+        }
+      },
+      {
+        "type": "media",
+        "props": {
+          "type": "image",
+          "mediaKey": "image:sameit/sameit-4",
+          "alt": "Diagnostic & Repair Tools",
+          "caption": {
+            "en": "Diagnostic & Repair Tools",
+            "de": "Diagnose- & Reparatur-Werkzeuge"
+          }
+        }
+      }
+    ]
+  },
+  {
     "id": "cubewar",
     "slug": "cubewar",
     "title": "CubeWar",
