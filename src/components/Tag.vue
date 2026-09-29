@@ -11,7 +11,7 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
 
 <template>
   <div :class="classes">
-    <p class="tag-copy">{{ tagLabels[props.variant] }}</p>
+    <p class="tag-copy">{{ (tagLabels as Record<string, string>)[props.variant] || props.variant }}</p>
   </div>
 </template>
 
