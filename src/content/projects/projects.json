@@ -251,95 +251,12 @@
     ]
   },
   {
-    "id": "cubewar",
-    "slug": "cubewar",
-    "title": "CubeWar",
-    "theme": "dark",
-    "tags": ["three", "node", "websockets", "redis"],
-    "videoBorder": false,
-    "live": "https://cubewar.io",
-    "github": "",
-    "thumbnailKey": "cubewar",
-    "previewDescription": {
-      "en": "Multiplayer strategy game",
-      "de": "Mehrspieler-Strategiespiel"
-    },
-    "description": {
-      "en": "CubeWar is a browser-based multiplayer game where players control cube avatars in fast-paced strategic battles.<br/><br/>I built the full stack myself, including the game engine, the client-side timeline system, and real-time networking with Redis-based matchmaking for smooth, high-concurrency gameplay.",
-      "de": "CubeWar ist ein browserbasiertes Multiplayer-Spiel, in dem Spieler in schnellen, strategischen Kämpfen gegeneinander antreten.<br/><br/>Ich habe den gesamten Stack selbst entwickelt, inklusive der Spiel-Engine, des Client-Timeline-Systems und des Echtzeit-Netzwerks mit Redis-basiertem Matchmaking für flüssiges Gameplay."
-    },
-    "components": [
-      {
-        "type": "media",
-        "props": {
-          "type": "video",
-          "mediaKey": "video:cubewar",
-          "caption": { "en": "Gameplay", "de": "Gameplay" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:cubewar/cubewar-0",
-          "alt": "Tutorial",
-          "caption": { "en": "Tutorial", "de": "Tutorial" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:cubewar/cubewar-1",
-          "alt": "Map Themes",
-          "caption": { "en": "Map Themes", "de": "Karten Themen" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:cubewar/cubewar-2",
-          "alt": "Authentication",
-          "caption": { "en": "Authentication", "de": "Authentifizierung" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:cubewar/cubewar-3",
-          "alt": "Responsive Design",
-          "caption": { "en": "Responsive Design", "de": "Responsives Design" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:cubewar/cubewar-4",
-          "alt": "Multiple Gamemodes",
-          "caption": { "en": "Multiple Gamemodes", "de": "Mehrere Spielmodi" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:cubewar/cubewar-5",
-          "alt": "Party System",
-          "caption": { "en": "Party System", "de": "Party-System" }
-        }
-      }
-    ]
-  },
-  {
     "id": "particles",
     "slug": "particles",
     "title": "WebGL Particles",
     "theme": "dark",
     "tags": ["ogl", "javascript", "glsl"],
-    "live": "https://particles.david-hckh.com/",
+    "live": "",
     "github": "",
     "videoBorder": false,
     "thumbnailKey": "particles",
@@ -385,71 +302,6 @@
           "mediaKey": "image:particles/particles-2",
           "alt": "Sphere Shape",
           "caption": { "en": "Sphere Shape", "de": "Kugel-Form" }
-        }
-      }
-    ]
-  },
-  {
-    "id": "pokedex",
-    "slug": "pokedex",
-    "title": "Pokédex",
-    "theme": "light",
-    "tags": ["javascript", "html", "css"],
-    "live": "https://pokedex.david-hckh.com/",
-    "github": "",
-    "videoBorder": true,
-    "thumbnailKey": "pokedex",
-    "previewDescription": {
-      "en": "Open-source learning project",
-      "de": "Open-Source-Lernprojekt"
-    },
-    "description": {
-      "en": "One of my first web projects to practice basic web development concepts. The Pokédex is open source so other developers can learn the same way I did.<br/><br/>It also interacts with a public API, to get more experience with asynchronous data fetching.",
-      "de": "Eines meiner ersten Webprojekte zur Praxis von Grundkonzepten der Webentwicklung. Das Pokédex ist Open Source, damit andere Entwickler genauso lernen können.<br/><br/>Es nutzt eine öffentliche API für asynchrones Daten-Fetching."
-    },
-    "components": [
-      {
-        "type": "media",
-        "props": {
-          "type": "video",
-          "mediaKey": "video:pokedex",
-          "caption": { "en": "Pokédex App", "de": "Pokédex App" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:pokedex/pokedex-0",
-          "alt": "Default View",
-          "caption": { "en": "Default View", "de": "Standardansicht" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:pokedex/pokedex-1",
-          "alt": "Search Function",
-          "caption": { "en": "Search Function", "de": "Suchfunktion" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:pokedex/pokedex-2",
-          "alt": "Responsive Design",
-          "caption": { "en": "Responsive Design", "de": "Responsives Design" }
-        }
-      },
-      {
-        "type": "media",
-        "props": {
-          "type": "image",
-          "mediaKey": "image:pokedex/pokedex-3",
-          "alt": "Lazy Loading",
-          "caption": { "en": "Lazy Loading", "de": "Nachladen" }
         }
       }
     ]
